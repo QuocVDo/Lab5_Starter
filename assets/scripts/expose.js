@@ -23,7 +23,7 @@ function playSound() {
   hornSound.volume = document.querySelector('#volume').value / 100;
   hornSound.play();
 
-  if (document.querySelector('#horn-select').value =='party-horn') {
+  if (document.querySelector('#horn-select').value =='party-horn' && document.querySelector('#volume').value!= 0) {
     jsConfetti.addConfetti();
   }
 }
